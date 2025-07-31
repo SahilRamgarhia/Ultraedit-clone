@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar using flexBox</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .logo img {
+            width: 190px;
+        }
+
+        nav {
+            display: flex;
+            margin-left: 70px;
+            margin-top: 25px;
+            align-items: center;
+            gap: 110px;
+            font-family: "Gill Sans", sans-serif;
+
+        }
+
+        .right ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .right ul li span {
+            padding: 0px 5px;
+        }
+
+        .container {
+
+            height: 790px;
+            margin-left: 330px;
+            margin-right: 250px;
+        }
+
+        .items {
+            border: 1px solid black;
+            height: 60px;
+            width: 100px;
+            margin: 50px;
+            align-content: center;
+            text-align: center;
+
+        }
+
+        .but {
+            border: 2px solid black;
+            height: 35px;
+            width: 99px;
+            align-content: center;
+            text-align: center;
+            margin-left: 200px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .one {
+            margin-top: 45px;
+            margin-left: 75px;
+            font-style: normal;
+            font-size: 15px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .one span {
+            margin-left: 640px;
+        }
+
+        .two {
+            font-size: 50px;
+            margin-top: 50px;
+            margin-left: 180px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .three {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 25px;
+            font-family: "Gill Sans", sans-serif;
+        }
+
+        .four {
+            text-align: center;
+            margin-top: 9px;
+            font-size: 25px;
+            font-family: "Gill Sans", sans-serif;
+        }
+
+        .gird {
+
+
+            margin-top: 40px;
+            border-radius: 10px;
+            background-color: rgb(247, 248, 248);
+            height: 100px;
+            width: 250px;
+            text-align: center;
+            font-size: 25px;
+            padding: 25px;
+        }
+
+        .blue {
+            padding: 14px 16px;
+            background-color: rgb(88, 184, 248);
+            font-weight: 700;
+            margin-top: 20px;
+            width: 250px;
+            font-size: 20px;
+            border-radius: 9px;
+            color: rgb(248, 252, 252);
+            border: none;
+            cursor: pointer;
+        }
+
+        .girde {
+            display: grid;
+
+            grid-template-columns: 300px 300px 300px;
+
+            column-gap: 15px;
+
+            place-content: center;
+            margin-top: 35px;
+
+        }
+
+        .img {
+            margin-top: 70px;
+            margin-left: 200px;
+            margin-bottom: 70px;
+        }
+
+        .blue a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .but a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .lang {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       .blue:hover{
+            background-color: rgb(153, 153, 250);
+            color: rgb(106, 183, 214);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="Background-2.png" alt=""></div>
+            <div class="right">
+                <ul>
+                    <li>Product <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" width="10" height="10" viewBox="0 0 256 256" xml:space="preserve">
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                            </svg></span> </li>
+                    <li>Pricing <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" width="10" height="10" viewBox="0 0 256 256" xml:space="preserve">
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                            </svg></span></li>
+                    <li>Resources <span><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="10" height="10"
+                                viewBox="0 0 256 256" xml:space="preserve">
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                            </svg></span></li>
+                    <li>Contact Us <span><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="10" height="10"
+                                viewBox="0 0 256 256" xml:space="preserve">
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                            </svg></span></li>
+                    <li>Our Company <span><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="10" height="10"
+                                viewBox="0 0 256 256" xml:space="preserve">
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                            </svg></span></li>
+                    <li>
+                        <span class="but"><b><a href="https://www.ultraedit.com/pricing/">Buy Now</a></b></span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="one">Home > UltraEdit
+        <span>What's New | Full Feature List | Latest changes | Read hotfix notes</span>
+    </div>
+    <div class="two">
+        If you need a text editor, you need <b>UltraEdit.</b>
+    </div>
+    <div class="three">UltraEdit is the most flexible, powerful, and secure text editor.</div>
+    <div class="four">Download a free, full-feature trial to see why. Available for Windows, Mac, and Linux.</div>
+    <div class="girde">
+        <div class="gird"><b>
+                <div class="lang">Ultra</b>Edit <small>for Windows</small></div>
+        <button class="blue"><a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*16lz3wo*_gcl_au*MzQ4MDgxMjE3LjE3NTI4MTk1NzU.*_ga*NDM4ODgyNDI0LjE3NTI4MTk1NzY.*_ga_QNXHVTPWNS*czE3NTM5NjA2NzgkbzYkZzEkdDE3NTM5NjE4OTgkajQ0JGwwJGgxMTc5NDkwOTYw">Download</a></button>
+    </div>
+    <div class="gird"><b>
+            <div class="lang">Ultra</b>Edit <small>for Mac</small></div>
+    <button class="blue"><a
+            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*16lz3wo*_gcl_au*MzQ4MDgxMjE3LjE3NTI4MTk1NzU.*_ga*NDM4ODgyNDI0LjE3NTI4MTk1NzY.*_ga_QNXHVTPWNS*czE3NTM5NjA2NzgkbzYkZzEkdDE3NTM5NjE4OTgkajQ0JGwwJGgxMTc5NDkwOTYw">Download</a></button>
+    </div>
+    <div class="gird"><b>
+            <div class="lang">Ultra</b>Edit <small>for Linux</small></div>
+    <button class="blue"><a
+            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*16lz3wo*_gcl_au*MzQ4MDgxMjE3LjE3NTI4MTk1NzU.*_ga*NDM4ODgyNDI0LjE3NTI4MTk1NzY.*_ga_QNXHVTPWNS*czE3NTM5NjA2NzgkbzYkZzEkdDE3NTM5NjE4OTgkajQ0JGwwJGgxMTc5NDkwOTYw">Download</a></button>
+    </div>
+    </div>
+    <div class="img">
+        <img src="image1.jpg" alt="image">
+    </div>
+</body>
+
+</html>
